@@ -92,5 +92,13 @@ int main()
 			fprintf(stdout, "Incorrect number of menu. Try again!\n");
 		}
 	}
+	for (int l = 0; l < curCountOfMatrix; l++)
+	{
+		free(dimensions[l]);
+		free(matrixs[l]);
+	}
+	free(dimensions);
+	free(matrixs);
+
 
 }
